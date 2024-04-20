@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love proposal</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="main-div">
+        <img src="https://media.tenor.com/dUFL7zBnb_oAAAAM/love-love-you.gif" class="img"/><br/>
+        <h1 class="h1"></h1><br/>
+        <button class="yes">Yes</button><button class="no">No</button>
+    </div>
+
+    <script>
+        // Select the "No" button
+        const noButton = document.querySelector('.no');
+        const yesButton = document.querySelector('.yes');
+        const h1text = document.querySelector('.h1');
+        const img = document.querySelector('.img');
+
+        function resetPage() {
+            h1text.textContent = '';
+            img.src = 'https://media.tenor.com/dUFL7zBnb_oAAAAM/love-love-you.gif';
+        }
+    
+        // Add click event listener to the "No" button
+        noButton.addEventListener('click', function() {
+            // Show the popup message
+            h1text.textContent = 'Why no? Please say yes! 💔';
+            img.src = 'https://i.pinimg.com/originals/3c/4f/b8/3c4fb834505fb283046d24bc62e4ea92.gif';
+            setTimeout(resetPage, 5000);
+        });
+
+        yesButton.addEventListener('click', function(){
+            h1text.textContent= "Love You Too ❤️"
+            img.src= "https://i.pinimg.com/originals/bb/ca/f1/bbcaf120eef8b409b19540b75b750166.gif";
+            setTimeout(resetPage, 120000);
+        })
+    </script>
+
+</body>
+</html>

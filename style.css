@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* .main-div{
+    margin-top: 5%;
+    margin-left: 38.8%;
+} */
+/* img{
+    margin: 2%;
+} */
+h1{
+    font-style: italic;
+}
+.yes{
+    border: none;
+    margin-right: 10%;
+    margin-top: 30px;
+    margin-left: 2%;
+    width: 5vw;
+    height: 4vh;
+    font-size: 16px;
+    background-color: #F88379;
+    border-radius: 25px;
+}
+.no{
+    border: none;
+    margin-right: 10%;
+    margin-top: 30px;
+    width: 5vw;
+    height: 4vh;
+    font-size: 16px;
+    background-color: #F88379;
+    border-radius: 25px
+}
+.yes:hover{
+    background-color: #008000;
+}
+.no:hover{
+    background-color: #ff0000;
+}
+.main-div {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px; /* Set maximum width */
+}
+
+.img {
+    width: 50%; /* Make the image responsive */
+}
+
+/* Media query for smaller devices */
+@media only screen and (max-width: 600px) {
+    .main-div {
+        margin: 20px auto;
+    }
+    .yes, .no {
+        width: 20%; /* Set width for buttons */
+        margin: 0 5px; /* Add some margin between buttons */
+        display: inline-block; /* Display buttons inline */
+    }
+}
